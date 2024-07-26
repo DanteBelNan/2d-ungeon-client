@@ -15,7 +15,6 @@ class user(client):
     def get_by_username(self,username):
         user_found = self._get(
             path=f"/users/{username}",
-            body=username
             )
 
         if user_found is not None:
